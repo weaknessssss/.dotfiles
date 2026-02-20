@@ -1,0 +1,143 @@
+{
+    "layer": "top",
+    "exclusive": false,   
+    "position": "top",
+	"spacing": 4,
+    "margin-top": 8,
+    "margin-left": 20,
+    "margin-right": 32,
+    "margin-bottom": 4,
+    
+    "modules-left": ["custom/arch", "hyprland/workspaces"],
+	//"modules-right": ["battery", "pulseaudio", "clock", "network", "custom/power"],
+	"modules-right": ["battery", "pulseaudio", "clock", "network"],
+	
+	
+	
+	
+	"custom/arch": {
+    "format": "", // значок арча (нужен nerd-fonts, например JetBrainsMono Nerd Font)
+    "tooltip": "Меню приложений",
+    "on-click": "wofi --show drun"
+	},
+	
+	
+	"hyprland/workspaces": 
+	{
+	"format": "{icon}",
+	"format-icons": {
+		"1": "1",
+		"2": "2",
+		"3": "3",
+		"4": "4",
+		"5": "5",
+		"6": "6",
+		"7": "7"
+	},
+	"persistent-workspaces": {
+		"eDP-1": [1, 2, 3, 4, 5, 6, 7]
+	},
+	"spacing": 4
+	},
+
+	"temperature": {
+  	"interval": 2,
+  	"thermal-zone": 0,                    // тот же сенсор, что был в Polybar
+  	"critical-threshold": 70,             // аналог warn-temperature
+  	"format": " {temperatureC}°C",       // снежинка + значение + градусы Цельсия
+  	"format-critical": " {temperatureC}°C",
+  	"format-critical-prefix": "🔥 ",
+  	"tooltip": false
+	},
+
+	"memory": {
+        "interval": 2,
+        "format": " {used:0.1f} GiB",
+        "tooltip": true,
+        "tooltip-format": "Використано: {used:0.1f}G з {total:0.1f}G"
+    },
+
+	"cpu": {
+        "interval": 2,
+        "format": " {usage}%",
+        "tooltip": false
+    },
+	
+	"battery": {
+    "bat": "5B10W139",
+    "adapter": "macsmc-ac",
+    "interval": 5,
+    "full-at": 98,
+    "states": {
+      "full": 98,
+      "good": 80,
+      "warning": 30,
+      "critical": 10
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "{icon}  {capacity}%",
+    "format-full": "{icon}  {capacity}%",
+    "format-icons": {
+      "charging": ["", "", "", "", ""],
+      "discharging": ["", "", "", "", ""],
+      "full": [""]
+    },
+    "tooltip-format": "{timeTo}\nCapacity: {capacity}%\nPower: {power}W"
+	},
+
+	
+	"pulseaudio": {
+	"format": "{icon} {volume}%",
+	"format-muted": "󰖁 {volume}%",
+	"format-icons": {
+  	"default": ["󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾", "󰕾", "󰕾", "󰕾", "󰕾"]
+	},
+	"on-click": "pavucontrol",
+	"scroll-step": 10,
+	"smooth-scrolling-threshold": 1
+	},
+
+  
+  	"clock": {
+    "interval": 60,
+    "format": "  {:%H:%M %p}",
+    "format-alt": " {:%a, %d %b %Y}",
+    "tooltip": true,
+    "tooltip-format": "{:%A, %d %B %Y\n%H:%M:%S}"
+  	},
+
+  
+  
+  	"network": {
+    "interface": "wlan0",
+    "interval": 3,
+    "format-wifi": "",
+    "format-disconnected": "󰖪",
+    "tooltip-format-wifi": "{essid}\nSignal: {signalStrength}%\nIP: {ipaddr}/{cidr}",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "sh $HOME/bin/wifimenu"
+  	},
+
+	"backlight": {
+    "device": "card2-eDP-1",
+    "format": " {percent}%",
+    "tooltip": true,
+    "tooltip-format": "Brightness: {percent}%",
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  	},
+
+	"custom/powermenu": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "sh $HOME/bin/powermenu"
+  	}
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+# --- Секреты и безопасность (КРИТИЧЕСКОЕ) ---
+.ssh/
+.gnupg/
+*history*
+.bash_history
+.zsh_history
+python_history
+config/gcloud/
+.netrc
+*.pem
+*.key
+*.pub
+id_rsa*
+id_ed25519*
+secrets.conf
+
+# --- Системный мусор Arch/Linux ---
+*~
+.DS_Store
+.directory
+.Trash-*
+lost+found/
+core
+*.bak
+*.old
+*.tmp
+
+# --- Кэши и временные файлы приложений ---
+.cache/
+.dbus/
+.serverauth.*
+Xauthority
+.Xauthority
+.xsession-errors
+.local/share/gvfs-metadata/
+.local/share/RecentDocuments/
+
+# --- Специфика твоих инструментов ---
+# Если используешь mako или hyprland, логи нам не нужны
+*.log
+hyprland.log
+
+# Если вдруг в конфигах затесался софт на JS/Python
+node_modules/
+__pycache__/
+.venv/

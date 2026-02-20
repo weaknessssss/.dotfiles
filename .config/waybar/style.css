@@ -1,0 +1,65 @@
+window#waybar {
+  background-color: rgba(43, 48, 59, 0.0);
+  min-height: 10px;
+  padding: 0;
+  border: none;
+  margin-bottom: -8px; /* Подставь сюда свое значение border_size из hyprland.conf */
+}
+
+* {
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  /* Глобальный зеленый цвет Matrix */
+  color: #ffffff; 
+}
+
+#workspaces button {
+  padding: 0 4px;
+  margin: 0 2px;
+  min-width: 0;
+}
+
+#workspaces button.active {
+  /* Зеленое подчеркивание активного стола */
+  border-bottom: 2px solid #ffffff; 
+  border-radius: 0;
+  padding-bottom: 0;
+}
+
+#temperature, #memory, #cpu, #pulseaudio, #network, #backlight, #custom-powermenu {
+  padding: 0 10px;
+}
+
+#custom-arch {
+  color: #1793d1; 
+  padding: 0 10px;
+}
+
+#clock {
+  padding: 0 10px;
+  color: #ffffff;
+}
+
+#clock.alt {
+  color: #ffffff; 
+}
+
+#network.wifi {
+  color: #ffffff;
+}
+
+#network.disconnected {
+  color: #D35F5E; /* Красный при разрыве */
+}
+
+/* --- БАТАРЕЯ (ОСТАВИЛ ТВОИ ЦВЕТА) --- */
+#battery {
+  font-size: 18px;
+  padding: 0 10px;
+  font-weight: 700;
+  color: #ffffff;
+}
