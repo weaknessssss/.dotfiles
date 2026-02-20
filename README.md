@@ -1,6 +1,11 @@
 # 🌌 Dotfiles // Arch Linux & Hyprland
 
 <p align="center">
+  <a href="https://archlinux.org/"><img src="https://img.shields.io/badge/OS-Arch%20Linux-1793D1?logo=arch-linux&logoColor=white&style=for-the-badge" alt="Arch Linux"></a>
+  <a href="https://hyprland.org/"><img src="https://img.shields.io/badge/WM-Hyprland-00A9FF?logo=wayland&logoColor=white&style=for-the-badge" alt="Hyprland"></a>
+</p>
+
+<p align="center">
   <img src="assets/desktop.png" alt="Desktop environment showcase">
 </p>
 
@@ -8,20 +13,45 @@ Welcome to my dotfiles repository. This stores configuration files for my workin
 
 ---
 
+## 📝 Contents
+- [Technology Stack](#-technology-stack)
+- [Keyboard Shortcuts](#-keyboard-shortcuts)
+- [Repository Structure](#-repository-structure)
+- [Showcase / Workflow](#-showcase--workflow)
+- [Installation](#-installation)
 
+---
 
 ## 🛠 Technology Stack
 
-* **OS:** Arch Linux
-* **WM:** Hyprland (Wayland)
-* **Terminal:** Kitty
-* **Shell:** Fish
-* **Editor:** Vim
-* **Multiplexer:** Tmux
-* **File Manager:** Yazi
-* **Bar:** Waybar
-* **Launcher:** Rofi (Wayland)
-* **Notifications:** Mako
+| Category | Software |
+| :--- | :--- |
+| **OS** | 🐧 Arch Linux |
+| **WM** | 🏔️ Hyprland (Wayland) |
+| **Terminal** | 🐱 Kitty |
+| **Shell** | 🐟 Fish |
+| **Editor** | 📝 Vim |
+| **Multiplexer**| 🪟 Tmux |
+| **File Manager**| 📁 Yazi |
+| **Bar** | 📊 Waybar |
+| **Launcher** | 🔍 Rofi (Wayland) |
+| **Notifications**| 💬 Mako |
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+Here are some of the most frequent keybindings configured in this setup (assuming `SUPER` as main modifier):
+
+| Keybinding | Action |
+| :--- | :--- |
+| `SUPER` + `Enter` | Open Terminal |
+| `SUPER` + `Q` | Close current window |
+| `SUPER` + `Space` | Open App Launcher |
+| `SUPER` + `E` | Open File Manager |
+| `SUPER` + `[1-9]` | Switch to workspace 1-9 |
+
+*(Note: These are examples, update them if your exact keybindings from `hyprland.conf` differ!)*
 
 ---
 
