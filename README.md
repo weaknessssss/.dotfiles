@@ -1,5 +1,9 @@
 # 🌌 Dotfiles // Arch Linux & Hyprland
 
+<p align="center">
+  <img src="assets/desktop.png" alt="Desktop environment showcase">
+</p>
+
 Welcome to my dotfiles repository. This stores configuration files for my working environment based on **Arch Linux** and the **Hyprland** tiling window manager.
 
 ---
@@ -23,6 +27,14 @@ Welcome to my dotfiles repository. This stores configuration files for my workin
 
 ## 📂 Repository Structure
 
+<details>
+<summary><b>View Folder Structure</b></summary>
+<br>
+<p align="center">
+  <img src="assets/structure.png" alt="Repository folder structure" width="350">
+</p>
+</details>
+
 The configs are organized in a way that allows them to be easily linked to the home directory using the `GNU Stow` utility.
 
 ### 🔹 `.config/` (User Settings)
@@ -41,6 +53,14 @@ The configs are organized in a way that allows them to be easily linked to the h
 * `.ssh/config` — SSH connection and host settings. **(Note: private keys are added to `.gitignore` and are never committed to the public repository!)**
 * `.tmux/` & `.tmux.conf` — Plugins and Tmux configuration for convenient work with terminal sessions.
 * `.vim/` & `.vimrc` — My Vim configuration, including plugin manager, color schemes, and autoloading.
+
+---
+
+## 💻 Showcase / Workflow
+
+<p align="center">
+  <img src="assets/workflow.png" alt="Workflow highlighting Neovim and btop">
+</p>
 
 ---
 
