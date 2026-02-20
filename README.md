@@ -46,9 +46,9 @@ Here are some of the most frequent keybindings configured in this setup (assumin
 | Keybinding | Action |
 | :--- | :--- |
 | `SUPER` + `Enter` | Open Terminal |
-| `SUPER` + `Q` | Close current window |
-| `SUPER` + `Space` | Open App Launcher |
-| `SUPER` + `E` | Open File Manager |
+| `SUPER` + `C` | Close current window |
+| `SUPER` + `D` | Open App Launcher |
+| `SUPER` + `T` | Open File Manager |
 | `SUPER` + `[1-9]` | Switch to workspace 1-9 |
 
 *(Note: These are examples, update them if your exact keybindings from `hyprland.conf` differ!)*
