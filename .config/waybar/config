@@ -120,7 +120,7 @@
     "on-click": "sh $HOME/bin/wifimenu"
   },
   "hyprland/language": {
-    "format": "<span text_transform=\"uppercase\">{short}</span>",
+    "format": "{short}",
     "tooltip": false,
     "on-click": "hyprctl switchxkblayout all next"
   }
