@@ -11,7 +11,6 @@
     "custom/arch",
     "hyprland/workspaces"
   ],
-  //"modules-right": ["battery", "pulseaudio", "clock", "network", "custom/power"],
   "modules-right": [
     "battery",
     "pulseaudio",
@@ -20,7 +19,7 @@
     "network"
   ],
   "custom/arch": {
-    "format": "", // значок арча (нужен nerd-fonts, например JetBrainsMono Nerd Font)
+    "format": "",
     "tooltip": "Меню приложений",
     "on-click": "wofi --show drun"
   },
@@ -47,26 +46,6 @@
       ]
     },
     "spacing": 4
-  },
-  "temperature": {
-    "interval": 2,
-    "thermal-zone": 0, // тот же сенсор, что был в Polybar
-    "critical-threshold": 70, // аналог warn-temperature
-    "format": " {temperatureC}°C", // снежинка + значение + градусы Цельсия
-    "format-critical": " {temperatureC}°C",
-    "format-critical-prefix": "🔥 ",
-    "tooltip": false
-  },
-  "memory": {
-    "interval": 2,
-    "format": " {used:0.1f} GiB",
-    "tooltip": true,
-    "tooltip-format": "Використано: {used:0.1f}G з {total:0.1f}G"
-  },
-  "cpu": {
-    "interval": 2,
-    "format": " {usage}%",
-    "tooltip": false
   },
   "battery": {
     "bat": "5B10W139",
@@ -144,18 +123,5 @@
     "format": "<span text_transform=\"uppercase\">{short}</span>",
     "tooltip": false,
     "on-click": "hyprctl switchxkblayout all next"
-  },
-  "backlight": {
-    "device": "card2-eDP-1",
-    "format": " {percent}%",
-    "tooltip": true,
-    "tooltip-format": "Brightness: {percent}%",
-    "on-scroll-up": "brightnessctl set +5%",
-    "on-scroll-down": "brightnessctl set 5%-"
-  },
-  "custom/powermenu": {
-    "format": " ",
-    "tooltip": false,
-    "on-click": "sh $HOME/bin/powermenu"
   }
 }

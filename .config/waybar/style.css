@@ -31,13 +31,8 @@ window#waybar {
   padding-bottom: 0;
 }
 
-#temperature,
-#memory,
-#cpu,
 #pulseaudio,
 #network,
-#backlight,
-#custom-powermenu,
 #language {
   padding: 0 10px;
 }
