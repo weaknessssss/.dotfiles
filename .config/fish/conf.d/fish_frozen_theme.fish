@@ -17,6 +17,15 @@ set --global fish_color_cwd_root red
 set --global fish_color_end green
 set --global fish_color_error brred
 set --global fish_color_escape brcyan
+set --global fish_color_hg_added green
+set --global fish_color_hg_clean green
+set --global fish_color_hg_copied magenta
+set --global fish_color_hg_deleted red
+set --global fish_color_hg_dirty red
+set --global fish_color_hg_modified yellow
+set --global fish_color_hg_renamed magenta
+set --global fish_color_hg_unmerged red
+set --global fish_color_hg_untracked yellow
 set --global fish_color_history_current --bold
 set --global fish_color_host normal
 set --global fish_color_host_remote yellow

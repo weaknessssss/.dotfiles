@@ -12,8 +12,6 @@ if status is-interactive
     abbr -a pr 'sudo pacman -Rs'
     # Обновление всей системы
     abbr -a pu 'sudo pacman -Syu'
-    # Поиск пакета
-    abbr -a ps 'pacman -Ss'
     #yay
     abbr -a yi 'yay -S'
     #yay sudo 
@@ -22,6 +20,9 @@ if status is-interactive
     abbr -a y 'yazi'
     #remote mac
     abbr -a r 'ssh user@192.168.0.101'
+    #tmux
+    abbr -a t 'tmux'
+
 end
 
 # TODO: Replace journal aliases after switching to OpenRC
@@ -77,10 +78,6 @@ set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"# Если использует
 
 
 
-# Переключаем раскладку на английский при запуске терминала
-if status is-interactive
-    hyprctl switchxkblayout apple-spi-keyboard 0 > /dev/null 2>&1
-end
 
 
 

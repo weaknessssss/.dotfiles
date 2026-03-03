@@ -6,7 +6,7 @@ if [ "$IS_FLOATING" = "true" ]; then
     hyprctl dispatch togglefloating
 else
     hyprctl dispatch setfloating
-    hyprctl dispatch resizeactive exact 600 800
+    hyprctl dispatch resizeactive exact 800 800
     hyprctl dispatch centerwindow
     #hyprctl dispatch pin 
 fi
