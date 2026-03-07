@@ -8,6 +8,8 @@ set expandtab
 
 set cursorline
 
+vmap <C-c> "+y
+
 set clipboard=unnamedplus
 
 " Игнорировать регистр при поиске, если нет заглавных букв

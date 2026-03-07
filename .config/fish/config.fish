@@ -83,3 +83,5 @@ set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"# Если использует
 
 
 
+
+fish_add_path /home/user/.spicetify
