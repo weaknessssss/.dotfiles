@@ -15,13 +15,12 @@
     "battery",
     "pulseaudio",
     "hyprland/language",
-    "clock",
-    "network"
+    "clock"
   ],
   "custom/arch": {
     "format": "",
     "tooltip": "Меню приложений",
-    "on-click": "wofi --show drun"
+    "on-click": "rofi -show drun"
   },
   "hyprland/workspaces": {
     "format": "{icon}",
