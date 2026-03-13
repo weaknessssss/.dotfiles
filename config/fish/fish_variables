@@ -1,0 +1,11 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR SXHKD_SHELL:sh
+SETUVAR ZO_CMD:zo
+SETUVAR Z_CMD:z
+SETUVAR Z_DATA:/home/user/\x2elocal/share/z/data
+SETUVAR Z_DATA_DIR:/home/user/\x2elocal/share/z
+SETUVAR Z_EXCLUDE:\x5e/home/user\x24
+SETUVAR __fish_initialized:4300
+SETUVAR fish_greeting:\x1d
+SETUVAR fish_user_paths:/home/user/\x2espicetify
