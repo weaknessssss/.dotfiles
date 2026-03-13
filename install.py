@@ -205,7 +205,12 @@ def main():
             print(f"{MAGENTA}{BOLD}>>> Installing {cat}{RESET}")
             paths = CATEGORIES[cat]
             for rel_path in paths:
-                src = dotfiles_dir / rel_path
+                if rel_path.startswith(".config/"):
+                    src_name = rel_path[8:]
+                    src = dotfiles_dir / "config" / src_name
+                else:
+                    src = dotfiles_dir / "config" / rel_path
+                
                 dest = home_dir / rel_path
                 
                 if src.exists():
