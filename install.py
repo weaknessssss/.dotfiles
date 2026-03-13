@@ -182,6 +182,28 @@ def ask_user():
             print(f"\n{RED}Installation cancelled.{RESET}")
             sys.exit(1)
 
+def install_fonts(dotfiles_dir: Path, home_dir: Path):
+    font_zip = dotfiles_dir / "fonts" / "JetBrainsMono.zip"
+    if not font_zip.exists():
+        return
+        
+    fonts_dir = home_dir / ".local" / "share" / "fonts"
+    jb_dir = fonts_dir / "JetBrainsMono"
+    
+    print(f"{MAGENTA}{BOLD}>>> Installing JetBrainsMono Nerd Font{RESET}")
+    spinner = Spinner(f"Extracting {CYAN}JetBrainsMono.zip{RESET} to {DIM}{jb_dir}{RESET}...")
+    spinner.start()
+    time.sleep(0.2)
+    
+    try:
+        jb_dir.mkdir(parents=True, exist_ok=True)
+        shutil.unpack_archive(str(font_zip), str(jb_dir), "zip")
+        subprocess.run(["fc-cache", "-f"], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        spinner.stop(success=True, final_msg=f"Installed fonts to {DIM}{jb_dir}{RESET} and updated font cache")
+    except Exception as e:
+        spinner.stop(success=False, final_msg=f"Failed to install fonts: {e}")
+    print()
+
 def main():
     if os.geteuid() == 0:
         print(f"{RED}{BOLD}✖ Error: Do not run this script as root or with sudo.{RESET}")
@@ -199,6 +221,8 @@ def main():
     dotfiles_dir = Path(__file__).parent.resolve()
     # Always resolve the true user home directory even if running under sudo (though blocked above)
     home_dir = Path(os.path.expanduser('~'))
+    
+    install_fonts(dotfiles_dir, home_dir)
     
     for opt_type, cat in selected_options:
         if opt_type == 'dotfiles':
