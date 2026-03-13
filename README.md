@@ -72,7 +72,12 @@ Clone this repository into a hidden folder in your home directory:
 git clone https://github.com/weaknessssss/.dotfiles.git
 cd ~/.dotfiles
 ```
+### 1.1 Manual setup
+Make sure you install all dependencies before setup wallpaper
 
+```bash
+swww img /home/user/.dotfiles/assets/wp9637442-8-bit-japan-live-wallpapers.gif
+```
 ### 2. Running the Installer
 
 Run the interactive installation script and select what components you want to install:
