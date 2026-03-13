@@ -69,7 +69,7 @@ An interactive Python script is provided to easily install the dotfiles and auto
 ### 1. Cloning the repository
 Clone this repository into a hidden folder in your home directory:
 ```bash
-git clone https://github.com/weaknessssss/dotfiles.git
+git clone https://github.com/weaknessssss/.dotfiles.git
 cd ~/.dotfiles
 ```
 
