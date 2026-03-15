@@ -4,7 +4,7 @@ window#waybar {
   padding: 0;
   border: none;
   margin-bottom: -8px;
-  /* Подставь сюда свое значение border_size из hyprland.conf */
+  /* Put your border_size value from hyprland.conf here */
 }
 
 * {
@@ -14,7 +14,7 @@ window#waybar {
   min-height: 0;
   padding: 0;
   margin: 0;
-  /* Глобальный зеленый цвет Matrix */
+  /* Global Matrix green color */
   color: #ffffff;
 }
 
@@ -25,7 +25,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-  /* Зеленое подчеркивание активного стола */
+  /* Green underline for active workspace */
   border-bottom: 2px solid #ffffff;
   border-radius: 0;
   padding-bottom: 0;
@@ -57,10 +57,10 @@ window#waybar {
 
 #network.disconnected {
   color: #D35F5E;
-  /* Красный при разрыве */
+  /* Red when disconnected */
 }
 
-/* --- БАТАРЕЯ (ОСТАВИЛ ТВОИ ЦВЕТА) --- */
+/* --- BATTERY (KEPT YOUR COLORS) --- */
 #battery {
   font-size: 18px;
   padding: 0 10px;

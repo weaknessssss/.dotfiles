@@ -19,7 +19,7 @@
   ],
   "custom/arch": {
     "format": "",
-    "tooltip": "Меню приложений",
+    "tooltip": "App menu",
     "on-click": "rofi -show drun"
   },
   "hyprland/workspaces": {

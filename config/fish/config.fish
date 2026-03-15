@@ -6,11 +6,11 @@ alias n="nvim"
 alias m="micro"
 
 if status is-interactive
-    # Установка
+    # Install
     abbr -a pi 'sudo pacman -S'
-    # Удаление (с зависимостями)
+    # Remove (with dependencies)
     abbr -a pr 'sudo pacman -Rs'
-    # Обновление всей системы
+    # System update
     abbr -a pu 'sudo pacman -Syu'
     #yay
     abbr -a yi 'yay -S'
@@ -60,19 +60,19 @@ alias ls="eza --icons --group-directories-first"
 alias ll="eza --icons --group-directories-first -l"
 alias tree="eza --icons --tree"
 
-# Дефолтный курсор — блок
+# Default cursor - block
 set fish_cursor_default block
 
-# Курсор в режиме вставки (если используешь Vi-mode)
-# Можно тоже поставить block, если не хочешь, чтобы он менялся
+# Cursor in insert mode (if using Vi-mode)
+# Optional: can also be set to block to prevent changing
 set fish_cursor_insert block
 
-# Курсор при замене символов
+# Cursor when replacing characters
 set fish_cursor_replace_one block
 
 set -gx FZF_DEFAULT_OPTS "--height 40% --layout=reverse --border --info=inline"
 set -gx FZF_DEFAULT_COMMAND "fd --type f --strip-cwd-prefix --hidden --exclude .git"
-set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"# Если используете плагин fzf.fish, превью включено по умолчанию.
+set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND" # If using fzf.fish plugin, preview is enabled by default.
 
 
 
